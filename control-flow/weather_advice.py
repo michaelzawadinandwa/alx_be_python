@@ -1,22 +1,14 @@
-task = input("Enter your task: ")
-priority = input("Priority (high/medium/low): ").lower()
-time_bound = input("Is it time-bound? (yes/no): ").lower()
+# weather_advice.py
 
-match priority:
-    case "high":
-        if time_bound == "yes":
-            print(f"Reminder: '{task}' is a high priority task that requires immediate attention today!")
-        else:
-            print(f"Reminder: '{task}' is a high priority task. Try to complete it soon.")
-    case "medium":
-        if time_bound == "yes":
-            print(f"Reminder: '{task}' is a medium priority task that requires attention today.")
-        else:
-            print(f"Reminder: '{task}' is a medium priority task. Schedule it for this week.")
-    case "low":
-        if time_bound == "yes":
-            print(f"Reminder: '{task}' is a low priority task but still needs to be done today.")
-        else:
-            print(f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
-    case _:
-        print("Invalid priority level. Please enter high, medium, or low.")
+# Prompt the user for the weather condition
+weather = input("What's the weather like today? (sunny/rainy/cold): ").lower()
+
+# Provide clothing recommendations based on the weather
+if weather == "sunny":
+    print("Wear a t-shirt and sunglasses.")
+elif weather == "rainy":
+    print("Don't forget your umbrella and a raincoat.")
+elif weather == "cold":
+    print("Make sure to wear a warm coat and a scarf.")
+else:
+    print("Sorry, I don't have recommendations for this weather.")
