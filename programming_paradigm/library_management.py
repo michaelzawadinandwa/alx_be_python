@@ -54,3 +54,4 @@ class Library:
         for book in self._books:
             if book.is_available():
                 print(f"{book.title} by {book.author}")
+    
