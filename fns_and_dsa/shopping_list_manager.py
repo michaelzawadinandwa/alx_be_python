@@ -13,7 +13,7 @@ def main():
         display_menu()   # REQUIRED: call of display_menu
 
         try:
-            choice = int(input("Enter your choice: "))  # REQUIRED: input as NUMBER
+            choice = int(input("Enter your choice:"))  # REQUIRED: input as NUMBER
         except ValueError:
             print("Invalid input. Please enter a number.")
             continue
