@@ -25,9 +25,9 @@ def main():
 		return
 
 	# Operation prompt
-	op = input("Choose the operation (+, -, *, /):").strip()
+	operation = input("Choose the operation (+, -, *, /):").strip()
 
-	match op:
+	match operation:
 		case "+":
 			result = num1 + num2
 		case "-":
@@ -40,11 +40,11 @@ def main():
 				return
 			result = num1 / num2
 		case _:
-			print(f"Unknown operation: {op!r}. Choose one of +, -, *, /. ")
+			print(f"Unknown operation: {operation!r}. Choose one of +, -, *, /. ")
 			return
 
 	# Output the result in the format expected by tests
-	print(f"The result is {result}.")
+	print(f"The result is {result}")
 
 
 if __name__ == "__main__":
