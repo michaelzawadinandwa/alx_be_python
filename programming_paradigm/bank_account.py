@@ -20,4 +20,5 @@ class BankAccount:
 
     def display_balance(self):
         """Print current balance nicely."""
-        print(f"Current Balance: ${self._account_balance}")
+        # Format with two decimal places to show cents (e.g. $250.00)
+        print(f"Current Balance: ${self._account_balance:.2f}")
